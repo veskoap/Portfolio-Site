@@ -1,7 +1,7 @@
 import { Social } from "../../page/types";
 
 export const fetchSocials = async () => {
-  const res = await fetch('http://localhost:3000/api/sanity/getSocials');
+  const res = await fetch('http://localhost:3000/api/getSocials');
 
   const data = await res.json();
   const socials: Social[] = data.socials;

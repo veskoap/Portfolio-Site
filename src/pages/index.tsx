@@ -1,18 +1,19 @@
 import type { GetStaticProps } from "next";
 import Head from "next/head";
+
 import About from "../components/About";
 import ContactMe from "../components/ContactMe";
-import WorkExperience from "../components/WorkExperience";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import WorkExperience from "../components/WorkExperience";
 import { Experience, PageInfo, Project, Skill, Social } from "../page/types";
+import { fetchExperiences } from "../sanity/lib/fetchExperience";
 import { fetchPageInfo } from "../sanity/lib/fetchPageInfo";
-import { fetchSocials } from "../sanity/lib/fetchSocials";
 import { fetchProjects } from "../sanity/lib/fetchProjects";
 import { fetchSkills } from "../sanity/lib/fetchSkills";
-import { fetchExperiences } from "../sanity/lib/fetchExperience";
+import { fetchSocials } from "../sanity/lib/fetchSocials";
 
 type Props = {
   pageInfo: PageInfo;
