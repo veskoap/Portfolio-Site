@@ -1,14 +1,14 @@
-import React from "react";
-import { SocialIcon } from "react-social-icons";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { Social } from "../page/types";
+import React from 'react'
+import {SocialIcon} from 'react-social-icons'
+import {motion} from 'framer-motion'
+import Link from 'next/link'
+import {Social} from '../page/types'
 
 type Props = {
-  socials: Social[];
-};
+  socials: Social[]
+}
 
-export default function Header({ socials }: Props) {
+export default function Header({socials}: Props) {
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:item-center">
       <motion.div
@@ -29,12 +29,7 @@ export default function Header({ socials }: Props) {
       >
         {/*Social Icons*/}
         {socials.map((social) => (
-          <SocialIcon
-            key={social._id}
-            url={social.url}
-            fgColor="gray"
-            bgColor="transparent"
-          />
+          <SocialIcon key={social._id} url={social.url} fgColor="gray" bgColor="transparent" />
         ))}
       </motion.div>
       <Link href="#contact" legacyBehavior>
@@ -60,11 +55,9 @@ export default function Header({ socials }: Props) {
             fgColor="gray"
             bgColor="transparent"
           />
-          <a className="uppercase hidden md:inline-flex text-sm text-gray-400">
-            Get in Touch
-          </a>
+          <a className="uppercase hidden md:inline-flex text-sm text-gray-400">Get in Touch</a>
         </motion.div>
       </Link>
     </header>
-  );
+  )
 }

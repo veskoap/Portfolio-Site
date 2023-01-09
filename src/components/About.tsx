@@ -34,6 +34,8 @@ export default function About({pageInfo}: Props) {
           //src={ImageOfMe}
           src={urlFor(pageInfo?.profilePicture).url()}
           alt="Another picture of me"
+          width={240}
+          height={240}
           className=" flex max-w-[240px] flex-shrink-0 rounded-full pb-4 md:max-w-sm md:rounded"
         />
       </motion.div>

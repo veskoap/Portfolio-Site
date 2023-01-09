@@ -10,7 +10,7 @@ export default defineConfig<Config>({
   dataset,
   projectId,
   schema,
-  title: 'Next.js Template',
+  title: 'vesko.me Studio',
 
   plugins: [deskTool(), visionTool()],
 })

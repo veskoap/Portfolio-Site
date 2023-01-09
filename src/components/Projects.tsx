@@ -39,6 +39,8 @@ export default function Projects({ projects }: Props) {
                 className="z-5 pt-24 w-[768px]"
                 src={urlFor(project?.image).url()}
                 alt=""
+                height={120}
+                width={768}
               />
             </motion.div>
 
@@ -57,6 +59,8 @@ export default function Projects({ projects }: Props) {
                     key={technology._id}
                     src={urlFor(technology.image).url()}
                     alt=""
+                    height={32}
+                    width={32}
                   />
                 ))}
               </div>
