@@ -1,4 +1,4 @@
-import type { GetStaticProps } from "next";
+import type { GetStaticProps } from "next"
 import Head from "next/head";
 
 import About from "../components/About";
