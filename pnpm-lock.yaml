@@ -8,6 +8,7 @@ specifiers:
   '@sanity/demo': ^1.0.1
   '@sanity/eslint-config-studio': ^2.0.1
   '@sanity/icons': ^2.2.2
+  '@sanity/image-url': ^1.0.1
   '@sanity/ui': ^1.0.12
   '@sanity/vision': ^3.1.4
   '@tailwindcss/typography': ^0.5.8
@@ -44,6 +45,7 @@ dependencies:
   '@sanity/client': 4.0.1
   '@sanity/demo': 1.0.1_oufhejcgymtq36brpcagqn7jou
   '@sanity/icons': 2.2.2_react@18.2.0
+  '@sanity/image-url': 1.0.1
   '@sanity/ui': 1.0.12_23mhwjhnzfjwvdn7ol54k26zom
   '@sanity/vision': 3.1.4_23mhwjhnzfjwvdn7ol54k26zom
   '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
