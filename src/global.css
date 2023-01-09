@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .heroButton {
+    @apply px-6 py-2 border border-[rgba(36,36,36,0)] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#892CDC]/40 hover:text-[#892CDC]/40;
+  }
+
+  .contactInput {
+    @apply outline-none bg-slate- rounded-sm border-b py-4 px-6 border-[rgba(36,36,36,0)] text-gray-500 placeholder-gray-500 transition-all  focus:border-[#892CDC]/40 focus:text-[#892CDC]/80;
+  }
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 html,
 body,
 #__next {
