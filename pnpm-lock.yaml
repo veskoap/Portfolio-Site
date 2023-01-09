@@ -18,6 +18,7 @@ specifiers:
   eslint: ^8.31.0
   eslint-config-next: 13.1.1
   eslint-plugin-simple-import-sort: ^8.0.0
+  framer-motion: ^8.2.4
   next: ^13.1.1
   next-sanity: ^3.1.9
   postcss: ^8.4.20
@@ -45,6 +46,7 @@ dependencies:
   '@sanity/ui': 1.0.12_23mhwjhnzfjwvdn7ol54k26zom
   '@sanity/vision': 3.1.4_23mhwjhnzfjwvdn7ol54k26zom
   '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
+  framer-motion: 8.2.4_biqbaboplfbrettd7655fr4n2y
   next: 13.1.1_biqbaboplfbrettd7655fr4n2y
   next-sanity: 3.1.9_hlk53mobadchafqop6dvodltqi
   react: 18.2.0
@@ -2263,7 +2265,7 @@ packages:
       '@sanity/color': 2.2.2
       '@sanity/icons': 2.2.2_react@18.2.0
       csstype: 3.1.1
-      framer-motion: 8.1.7_biqbaboplfbrettd7655fr4n2y
+      framer-motion: 8.2.4_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-is: 18.2.0
@@ -4561,8 +4563,8 @@ packages:
       '@emotion/is-prop-valid': 0.8.8
     dev: false
 
-  /framer-motion/8.1.7_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-9ODjhOG1/XEDckJlva+5Ya2dvpBsz1ieX9DhAVGp1/IyrLuO3LSUIhj0vMX3Hr3Ujju0ebsMqFoedy84cz+9LQ==}
+  /framer-motion/8.2.4_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-bd2g3kgb8m0jBi+OOzsKPW4rQCn5gOOlbAlT0iMX6ruQPZ9qzIIABrRj2DFhwW6EcFvfJSP6EVVHSI8SQYBBOw==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
