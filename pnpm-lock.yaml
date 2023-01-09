@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@heroicons/react': ^2.0.13
   '@next/font': ^13.1.1
   '@sanity/color': ^2.2.2
   '@sanity/demo': ^1.0.1
@@ -25,14 +26,19 @@ specifiers:
   prettier-plugin-tailwindcss: ^0.2.1
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-hook-form: ^7.41.5
   react-is: ^18.2.0
+  react-simple-typewriter: ^5.0.1
+  react-social-icons: ^5.15.0
   sanity: ^3.1.4
   styled-components: ^5.3.6
   suspend-react: ^0.0.9
+  tailwind-scrollbar: ^2.1.0
   tailwindcss: ^3.2.4
   typescript: ^4.9.4
 
 dependencies:
+  '@heroicons/react': 2.0.13_react@18.2.0
   '@next/font': 13.1.1
   '@sanity/demo': 1.0.1_oufhejcgymtq36brpcagqn7jou
   '@sanity/icons': 2.2.2_react@18.2.0
@@ -43,7 +49,10 @@ dependencies:
   next-sanity: 3.1.9_hlk53mobadchafqop6dvodltqi
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-hook-form: 7.41.5_react@18.2.0
   react-is: 18.2.0
+  react-simple-typewriter: 5.0.1_biqbaboplfbrettd7655fr4n2y
+  react-social-icons: 5.15.0_react@18.2.0
   sanity: 3.1.4_wm6cv4qzooxlf2asepxq6u4y3i
   styled-components: 5.3.6_7i5myeigehqah43i5u7wbekgba
   suspend-react: 0.0.9_react@18.2.0
@@ -63,6 +72,7 @@ devDependencies:
   prettier: 2.8.1
   prettier-plugin-packagejson: 2.3.0_prettier@2.8.1
   prettier-plugin-tailwindcss: 0.2.1_prettier@2.8.1
+  tailwind-scrollbar: 2.1.0_tailwindcss@3.2.4
   tailwindcss: 3.2.4_postcss@8.4.20
   typescript: 4.9.4
 
@@ -1545,6 +1555,14 @@ packages:
       '@floating-ui/dom': 1.1.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@heroicons/react/2.0.13_react@18.2.0:
+    resolution: {integrity: sha512-iSN5XwmagrnirWlYEWNPdCDj9aRYVD/lnK3JlsC9/+fqGF80k8C7rl+1HCvBX0dBoagKqOFBs6fMhJJ1hOg1EQ==}
+    peerDependencies:
+      react: '>= 16'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /@humanwhocodes/config-array/0.11.8:
@@ -6313,6 +6331,15 @@ packages:
       use-sidecar: 1.1.2_kzbn2opkn2327fwg5yzwzya5o4
     dev: false
 
+  /react-hook-form/7.41.5_react@18.2.0:
+    resolution: {integrity: sha512-DAKjSJ7X9f16oQrP3TW2/eD9N6HOgrmIahP4LOdFphEWVfGZ2LulFd6f6AQ/YS/0cx/5oc4j8a1PXxuaurWp/Q==}
+    engines: {node: '>=12.22.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17 || ^18
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
@@ -6361,6 +6388,26 @@ packages:
       react: 18.2.0
       rxjs: 6.6.7
       use-sync-external-store: 1.2.0_react@18.2.0
+    dev: false
+
+  /react-simple-typewriter/5.0.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-vA5HkABwJKL/DJ4RshSlY/igdr+FiVY4MLsSQYJX6FZG/f1/VwN4y1i3mPXRyfaswrvI8xii1kOVe1dYtO2Row==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=18.0.0'
+      react-dom: '>=18.0.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /react-social-icons/5.15.0_react@18.2.0:
+    resolution: {integrity: sha512-khfDgUiUwEBe34T6br2+mkXQg3hLVDdviVjexxZoVCsogMgxTy/m8+KlX/j6Wa7P2BPxgZ7yZ2jXw3X06pUUFQ==}
+    peerDependencies:
+      react: 15.x.x || 16.x.x || 17.x.x || 18.x.x
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.2.0
     dev: false
 
   /react-style-proptype/3.2.2:
@@ -7104,6 +7151,15 @@ packages:
     dependencies:
       '@pkgr/utils': 2.3.1
       tslib: 2.4.1
+    dev: true
+
+  /tailwind-scrollbar/2.1.0_tailwindcss@3.2.4:
+    resolution: {integrity: sha512-zpvY5mDs0130YzYjZKBiDaw32rygxk5RyJ4KmeHjGnwkvbjm/PszON1m4Bbt2DkMRIXlXsfNevykAESgURN4KA==}
+    engines: {node: '>=12.13.0'}
+    peerDependencies:
+      tailwindcss: 3.x
+    dependencies:
+      tailwindcss: 3.2.4_postcss@8.4.20
     dev: true
 
   /tailwindcss/3.2.4_postcss@8.4.20:
