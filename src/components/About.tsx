@@ -38,7 +38,7 @@ export default function About({pageInfo}: Props) {
             alt="Another picture of me"
             width={200}
             height={200}
-            className=" flex max-w-[240px] h-48 w-48 md:h-56 md:w-56 xl:h-64 xl:w-64 flex-shrink-0 rounded-full scroll -pb-10 md:max-w-sm md:rounded"
+            className=" flex max-w-[240px] h-36 w-36 md:h-56 md:w-56 xl:h-64 xl:w-64 flex-shrink-0 rounded-full scroll -pb-10 md:max-w-sm md:rounded"
           />
         </motion.div>
 
