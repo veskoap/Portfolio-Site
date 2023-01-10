@@ -19,7 +19,7 @@ export default function About({pageInfo}: Props) {
       <h3 className="absolute text-center top-20 text-2xl uppercase tracking-[10px] lg:tracking-[20px] text-gray-500">
         About
       </h3>
-      <div className='relative mx-auto pt-96 md:pt-0 -space-y-96 md:space-y-10 flex h-screen flex-col items-center justify-evenly text-center md:flex-row md:text-left'>
+      <div className='relative mx-auto pt-96 md:pt-0 -space-y-80 md:space-y-10 flex h-screen flex-col items-center justify-evenly text-center md:flex-row md:text-left'>
         <motion.div
           className="relative mx-auto mt-24 flex h-screen max-w-7xl top-8 md:-top-8 flex-col items-center justify-evenly text-center md:flex-row md:text-left lg:px-0"
           initial={{
