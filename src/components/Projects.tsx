@@ -24,7 +24,7 @@ export default function Projects({ projects }: Props) {
         {projects?.map((project, i) => (
           <div
             key={project._id}
-            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-24 h-screen"
+            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-10 xl:p-20 md:p-24 h-screen"
           >
             <motion.div
               initial={{
@@ -36,7 +36,7 @@ export default function Projects({ projects }: Props) {
               viewport={{ once: true }}
             >
               <Image
-                className="z-5 pt-24 w-[768px]"
+                className="z-5 pt-20 scale-75"
                 src={urlFor(project?.image).url()}
                 alt=""
                 height={120}
