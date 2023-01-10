@@ -16,7 +16,7 @@ export default function About({pageInfo}: Props) {
       transition={{duration: 1.5}}
       className="relative mx-auto -space-y-96 md:space-y-10 flex h-screen max-w-7xl flex-col items-center justify-evenly px-10 text-center md:flex-row md:text-left"
     >
-      <h3 className="absolute text-center top-20 text-2xl uppercase tracking-[10px] lg:tracking-[20px] text-gray-500">
+      <h3 className="absolute text-center top-16 md:top-20 xl:top-24 text-2xl uppercase tracking-[10px] lg:tracking-[20px] text-gray-500">
         About
       </h3>
       <div className='relative mx-auto pt-96 md:pt-0 -space-y-16 md:space-y-10 flex h-screen flex-col items-center justify-evenly text-center md:flex-row md:text-left'>
