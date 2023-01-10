@@ -16,7 +16,7 @@ export default function Projects({ projects }: Props) {
       transition={{ duration: 1.5 }}
       className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-20 uppercase tracking-[10px] lg:tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
 
@@ -44,8 +44,8 @@ export default function Projects({ projects }: Props) {
               />
             </motion.div>
 
-            <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-2xl md:text-4xl font-semibold text-center">
+            <div className="space-y-4 lg:space-y-10 px-0 md:px-10 max-w-8xl">
+              <h4 className="text-xl md:text-4xl font-semibold text-center">
                 <span className="underline decoration-[#892CDC]/50">
                   Case Study {i + 1} of {projects.length}:{" "}
                 </span>
@@ -55,7 +55,7 @@ export default function Projects({ projects }: Props) {
               <div className="flex items-center space-x-2 justify-center">
                 {project.technologies.map((technology) => (
                   <Image
-                    className="h-8 w-8"
+                    className="h-6 w-6 lg:h-8 lg:w-8"
                     key={technology._id}
                     src={urlFor(technology.image).url()}
                     alt=""
@@ -65,7 +65,7 @@ export default function Projects({ projects }: Props) {
                 ))}
               </div>
 
-              <p className="text-base text-center md:text-left">
+              <p className="text-sm md:text-base text-center md:text-left">
                 {project?.summary}
               </p>
             </div>
