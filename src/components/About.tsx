@@ -21,7 +21,7 @@ export default function About({pageInfo}: Props) {
       </h3>
       <div className='relative mx-auto pt-96 md:pt-0 -space-y-16 md:space-y-10 flex h-screen flex-col items-center justify-evenly text-center md:flex-row md:text-left'>
         <motion.div
-          className="relative mx-auto mt-10 md:mt-24 flex h-screen max-w-7xl top-8 md:-top-8 flex-col items-center justify-evenly text-center md:flex-row md:text-left lg:px-0"
+          className="relative mx-auto md:mt-24 flex h-screen max-w-7xl top-8 md:-top-8 flex-col items-center justify-evenly text-center md:flex-row md:text-left lg:px-0"
           initial={{
             x: -200,
             opacity: 0,
