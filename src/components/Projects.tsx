@@ -24,9 +24,10 @@ export default function Projects({ projects }: Props) {
         {projects?.map((project, i) => (
           <div
             key={project._id}
-            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-10 xl:p-20 md:p-24 h-screen"
+            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-2 items-center justify-center p-10 xl:p-24 md:p-20 h-screen"
           >
             <motion.div
+            className="lg:-mb-48"
               initial={{
                 y: -300,
                 opacity: 0,
@@ -47,7 +48,7 @@ export default function Projects({ projects }: Props) {
             <div className="space-y-4 lg:space-y-10 px-0 md:px-10 max-w-8xl">
               <h4 className="text-xl md:text-4xl font-semibold text-center">
                 <span className="underline decoration-[#892CDC]/50">
-                  Case Study {i + 1} of {projects.length}:{" "}
+                  Case Study {i + 1} of {projects.length}:{" "}<br></br>
                 </span>
                 {project?.title}
               </h4>
@@ -65,7 +66,7 @@ export default function Projects({ projects }: Props) {
                 ))}
               </div>
 
-              <p className="text-sm md:text-base text-center md:text-left">
+              <p className="text-sm md:text-base md:-pt-8 text-center md:text-left md:max-w-4xl">
                 {project?.summary}
               </p>
             </div>
