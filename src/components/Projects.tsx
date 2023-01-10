@@ -37,7 +37,7 @@ export default function Projects({ projects }: Props) {
               viewport={{ once: true }}
             >
               <Image
-                className="z-5 pt-20 scale-75"
+                className="z-5 pt-20 h-auto scale-75"
                 src={urlFor(project?.image).url()}
                 alt=""
                 height={120}
@@ -45,15 +45,15 @@ export default function Projects({ projects }: Props) {
               />
             </motion.div>
 
-            <div className="space-y-4 lg:space-y-10 px-0 md:px-10 max-w-8xl">
+            <div className="space-y-4 lg:space-y-10 px-0 md:px-10 max-w-8xl md:pt-24">
               <h4 className="text-xl md:text-4xl font-semibold text-center">
                 <span className="underline decoration-[#892CDC]/50">
                   Case Study {i + 1} of {projects.length}:{" "}<br></br>
                 </span>
                 {project?.title}
               </h4>
-
-              <div className="flex items-center space-x-2 justify-center">
+                
+              <div className="flex items-center space-x-2 justify-center z-30">
                 {project.technologies.map((technology) => (
                   <Image
                     className="h-6 w-6 lg:h-8 lg:w-8"
