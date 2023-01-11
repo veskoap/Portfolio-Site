@@ -25,7 +25,7 @@ function Skill({skill, directionLeft}: Props) {
           alt=""
           height={96}
           width={96}
-          className="rounded-full border-2 border-gray-500 object-contain w-16 h-16 md:w-24 md:h-24 filter group-hover:grayscale transition duration-300 ease-in-out"
+          className=" rounded-full border-2 border-gray-500 object-fill w-16 h-16 md:w-24 md:h-24 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
       </motion.div>
 

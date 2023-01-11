@@ -37,7 +37,7 @@ export default function Projects({ projects }: Props) {
               viewport={{ once: true }}
             >
               <Image
-                className="z-5 pt-20 h-auto scale-75"
+                className="z-5 pt-20 h-auto scale-50 max-h-fit"
                 src={urlFor(project?.image).url()}
                 alt=""
                 height={120}
