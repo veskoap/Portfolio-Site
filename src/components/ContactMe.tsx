@@ -27,7 +27,7 @@ function ContactMe({pageInfo}: Props) {
       <div className="flex flex-col space-y-5 md:space-y-10 mt-10">
         <h4 className="text-2xl lg:text-4xl font-semibold text-center">
           Feel free to reach out.{' '}
-          <span className="underline decoration-[#892CDC]/50">Lets Chat</span>
+          <span className="underline decoration-[#892CDC]/50">Let's Chat</span>
         </h4>
 
         <div className="space-y-2 md:space-y-10">
