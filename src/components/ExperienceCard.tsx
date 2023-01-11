@@ -11,7 +11,7 @@ type Props = {
 export default function ExperienceCard({experience}: Props) {
   return (
     <article
-      className="flex flex-col xl:mb-20 rounded-lg items-center space-y-7 flex-shrink-0 w-96 md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-4 xl:p-10 hover:opacity-100 opacity-40
+      className="flex flex-col xl:mb-20 rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-4 -mb-8 xl:p-10 hover:opacity-100 opacity-40
      cursor-pointer transition-opacity duration-200 overflow-hidden"
     >
       <motion.div
@@ -27,7 +27,7 @@ export default function ExperienceCard({experience}: Props) {
         viewport={{once: true}}
       >
         <Image
-          className="w-24 h-24 rounded-full xl:w-[200px] xl:h-[200px] object-contain object-center"
+          className="w-20 h-20 md:w-24 md:h-24 rounded-full xl:w-[200px] xl:h-[200px] object-contain object-center"
           src={urlFor(experience?.companyImage).url()}
           width={128}
           height={128}
