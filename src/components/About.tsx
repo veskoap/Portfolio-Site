@@ -36,6 +36,7 @@ export default function About({pageInfo}: Props) {
             //src={ImageOfMe}
             src={urlFor(pageInfo?.profilePicture).url()}
             alt="Another picture of me"
+            priority
             width={200}
             height={200}
             className=" flex max-w-[240px] h-36 w-36 md:h-56 md:w-56 xl:h-72 xl:w-72 flex-shrink-0 rounded-full scroll -mt-10 md:mt-0 md:max-w-sm md:rounded"
@@ -44,7 +45,7 @@ export default function About({pageInfo}: Props) {
 
         <div className="space-y-4 px-0 md:px-10">
           <h4 className="xl:text-4xl text-xl md:text-2xl -pt-10 md:pt-10">
-            Here is a <span className="underline decoration-[#892CDC]">little</span> background
+            <span className="underline decoration-[#892CDC]">Bio</span>
           </h4>
           <p className="pb-16 text-sm md:text-base lg:max-w-7xl">
             {pageInfo?.backgroundInformation}
